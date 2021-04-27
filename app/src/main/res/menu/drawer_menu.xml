@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newUser"
+            android:icon="@drawable/new_user"
+            android:title="New User" />
+        <item
+            android:id="@+id/existingUser"
+            android:icon="@drawable/existing_user"
+            android:title="Existing User" />
+        <item
+            android:id="@+id/offer"
+            android:icon="@drawable/offer"
+            android:visible="false"
+            android:title="Offer" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/enter_customer_mobile"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobile"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/mobile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:text="Search" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userCard"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBtn"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : Anil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

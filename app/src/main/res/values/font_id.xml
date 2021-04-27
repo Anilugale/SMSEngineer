@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qr_code">&#xf029;</string>
+    <string name="excel_code">&#xf65b;</string>
+    <string name="daily_expenses_code">&#xf2b5;</string>
+    <string name="teams_code">&#xf0c0;</string>
+    <string name="enquiry_code">&#xf6a3;</string>
+    <string name="tool_code">&#xf552;</string>
+    <string name="installation_code">&#xf085;</string>
+    <string name="calibration_code_">&#xf14e;</string>
+    <string name="amc_code">&#xf629;</string>
+    <string name="warning_code">&#xf071;</string>
+    <string name="complaint_code">&#xf044;</string>
+    <string name="appointment_code">&#xf274;</string>
+    <string name="repair_code">&#xf5e3;</string>
+    <string  name="user_plus">&#xf234;</string>
+    <string  name="user_icon">&#xf007;</string>
+</resources>

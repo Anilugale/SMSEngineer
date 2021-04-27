@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameUser"
+                android:hint="@string/name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:fontFamily="@font/regular_font"
+                    android:maxLength="100"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile"
+                android:hint="@string/mobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:hint="@string/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="100"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:hint="@string/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                android:hint="@string/address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="5"
+                    android:inputType="text"
+                    android:minLines="3"
+                    android:maxLength="100"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pincode"
+                android:hint="@string/pincode"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/stateName"
+                    android:text=""
+                    android:hint="@string/state"
+                    android:padding="10dp"
+                    android:drawableEnd="@drawable/right_arror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/cityName"
+                    android:text=""
+                    android:hint="@string/city"
+                    android:padding="10dp"
+                    android:drawableEnd="@drawable/right_arror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+               />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scanAdhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/qr_icon"
+        app:tint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"
+      />
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -9,9 +9,16 @@
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:layout_above="@+id/versionCode"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/versionCode"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:padding="10dp"
         android:layout_height="wrap_content"/>
-
 </RelativeLayout>
